@@ -29,6 +29,11 @@ $(document).ready(function(){
         $('select').focus();
     });
 });
+    $( function() {
+    var spinner = $( "#spinner" ).spinner();
+  var spinner2 = $( "#spinner2" ).spinner();
+    $( "button" ).button();
+  } );
 })(jQuery);
 
 

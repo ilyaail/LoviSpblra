@@ -7,8 +7,10 @@ $MonSB: MontserratSemiBold, sans-serif
 $MonReg: MontserratRegular, sans-serif
 $MonEB: MontserratExtraBold, sans-serif
 $MonM: MontserratMedium, sans-serif
+$MonI: MontserratItalic, sans-serif
 *
 	font-family: $MonReg
+	outline: 0 !important
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -79,12 +81,12 @@ nav
 .request_btn span
 	font-weight: 600
 	color: #070f12
-.active
+nav .active
 	border-bottom: 2px solid #fca416
 .nav-item
 	padding: 0 5px
 .hero
-	background: url('/img/Landing_page.png') no-repeat
+	background: url('../img/Landing_page.png') no-repeat
 	background-size: contain
 	min-height: 1280px
 	background-position: center 300px
@@ -236,7 +238,7 @@ nav
 .card-header a
 	display: block
 .faq_cards
-	background: url('/img/Pilkas fonas.png') no-repeat center 350px
+	background: url('../img/Pilkas fonas.png') no-repeat center 350px
 	background-size: cover
 .card
 	background: transparent
@@ -275,7 +277,7 @@ nav
 	padding-bottom: 45px
 .combined
 	background-color: transparent
-	background: url('/img/Combined-certificate.png') no-repeat center center
+	background: url('../img/Combined-certificate.png') no-repeat center center
 	background-size: contain
 	text-align: center
 	padding-top: 50px
@@ -353,8 +355,227 @@ footer
 .option.selected
 	font-family: $MonBold
 	color: #faa41a
-// @import "media" // Всегда в конце
 
+.buy_price_m
+	display: none
+
+.sertificates
+	background: url('../img/Fonas.png') no-repeat center bottom
+	background-color: #f9f9f9
+	h1,p
+		text-align: left 
+.sertificates_text-italic
+	font-family: $MonI
+	font-size: 22px
+	margin: 0
+	padding-top: 10px
+	padding-bottom: 10px
+.sertificates_text
+	font-family: $MonReg
+	font-size: 18px
+	margin-left: 0
+	padding-bottom: 15px
+.up_img
+	padding-bottom: 40px
+	width: 100%
+.what_can_do
+	position: relative
+	padding-left: 20px
+	font-family: $MonReg
+	color: #1d1d1d
+	font-size: 18px
+.what_can_do:before
+	position: absolute
+	content: ''
+	left: 0
+	top: 0
+	background-color: #faa41a
+	height: 100%
+	width: 3px
+
+.what_can_do a
+	color: #464646
+	font-family: $MonM
+	border-bottom: 1px solid #464646
+.what_can_do a:hover
+	text-decoration: none
+.sertificates_advantages img
+	max-width: 30px
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+
+.combined_item-title
+	font-size: 22px
+	font-family: $MonBold
+	padding-left: 10px
+	margin-bottom: 0
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	vertical-align: middle
+.combined_item-text
+	padding-top: 10px
+.sertificates_advantages
+	padding-top: 20px
+.sertificates_advantages
+	border-bottom: 1px solid #e1e1e1
+	padding-bottom: 25px
+	margin-bottom: 25px
+.room_image,
+.ui-button
+	border: none
+	background: transparent
+	padding-left: 50px
+.rooms_tabs ul li
+	padding-left: 0
+	background: transparent
+	margin-right: 50px
+.detail
+	padding-top: 50px
+.rooms_tabs ul li a
+	padding: 0
+	font-size: 22px
+	border-bottom: 1px solid #464646
+	color: #464646
+	border-radius: 0px !important
+	margin-right: 10px
+.rooms_tabs ul li a.active
+	color: #faa41a !important
+	border-bottom: 1px solid #faa41a
+	background: transparent !important
+	border-radius: 0
+	font-family: $MonBold
+	padding: 0
+.tab_title
+	font-family: $MonM
+	font-size: 20px
+	color: #070f12
+	padding-bottom: 10px
+.tab_description
+	font-size: 16px
+	color: #464646
+.tab_description:first-of-type
+	margin-bottom: 0
+.detail__list-item span
+	font-family: $MonBold
+	font-size: 16px
+.detail__list-item
+	color: #070f12
+// .detail__list
+// 	list-style-type: none
+// 	border-left: 4px solid #faa41a
+
+.detail ul
+	position: relative
+
+.detail ul:before
+	position: absolute
+	content: ''
+	left: 0
+	top: 0
+	background-color: #faa41a
+	height: 100%
+	width: 3px
+.detail__list-item a
+	color: #65a2fe !important
+	font-size: 16px !important
+	border-bottom: 1px solid #65a2fe !important
+
+
+.item_add_to_cart
+	background: -webkit-linear-gradient(left, rgba(252,164,22,1) 0%, rgba(255,223,16,1) 100%)
+	font-family: $MonBold
+	font-size: 16px
+	padding: 18px 72px
+	border-radius: 40px
+	display: inline-block
+	margin-bottom: 25px
+	color: #1d1d1d
+.item_add_to_cart:hover
+	color: #1d1d1d
+	text-decoration: none
+.ui-spinner-up 
+	background: url('../img/Arrow up.svg') no-repeat !important
+	background-position: bottom
+	max-height: 8px
+	margin-top: 9px
+.ui-spinner-down
+	background: url('../img/Arrow down.svg') no-repeat !important
+	background-position: top
+	max-height: 8.5px
+	margin-bottom: 9px
+#spinner,
+#spinner2
+	max-width: 55px
+	margin-right: 0
+	padding-left: 10px
+.ui-spinner a.ui-spinner-button
+	border: none
+.ui-widget.ui-widget-content
+	border-radius: 40px
+.quantity
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+.item_add_to_cart
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+.action_section span
+	font-family: $MonBold
+	color: #1d1d1d
+	font-size: 16px
+	margin-right: 15px
+.buy_price
+	font-size: 48px
+	font-family: $MonBold
+	color: #1d1d1d
+	text-align: center !important
+
+	margin-bottom: 0
+.buy_description
+	color: #464646
+	font-size: 16px
+	text-align: center !important
+	max-width: 420px
+	margin-bottom: 0
+.buy_title
+	font-size: 22px
+	color: #1d1d1d
+	text-align: center !important
+	font-family: $MonBold
+.buy_image
+	margin: 0 auto
+.buy_section
+	padding-top: 90px
+.body-sertificates footer
+	background: transparent
+.body-sertificates footer .container
+	border-top: 1px solid #e1e1e1
+	padding-top: 30px
+
+.ui-button:focus,
+.ui-button:hover
+	border: none
+	background: transparent
+.ui-button
+	padding: 0
+.order-lg-2
+	order: 1
+.order-lg-1
+	order: 2
+// @import "media" // Всегда в конце
+.ui-button:selection
+	background-color: transparent
 @media only screen and (min-width: 768px) and (max-width: 1024px)
 	.hello_text
 		padding-top: 70px
@@ -379,7 +600,7 @@ footer
 	.section_title
 		font-size: 22px
 	.last-certific
-		background: url('/img/4.png') no-repeat center center 
+		background: url('../img/4.png') no-repeat center center 
 		background-size: cover
 		padding-bottom: 30px
 	.title_combined
@@ -399,6 +620,41 @@ footer
 		margin-bottom: 10px
 	.footer__list
 		padding: 0
+	.sertificates h1.section_title
+		font-size: 32px
+	.what_can_do a
+		color: #faa41a
+		border-color: #faa41a
+	.what_can_do
+		height: 50%
+	.combined_item-text
+		max-width: 250px
+	.combined_item-title
+		vertical-align: bottom
+
+	.order-lg-2
+		order: 2
+	.order-lg-1
+		order: 1
+	.room_image
+		margin: 0 auto
+		margin-bottom: 60px
+	.buy_section
+		padding-top: 50px
+	.buy_description
+		max-width: 390px
+		margin: 0 auto
+	.action_section
+		text-align: center
+	.ui-button
+		padding-left: 0
+	.sertificates
+		background: #f9f9f9
+	.body-sertificates footer
+		padding-top: 0
+		border-top: none
+	.body-sertificates footer .container
+		border-top: none
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -408,6 +664,8 @@ footer
 		border-radius: 20px
 		padding: 10px 15px
 		color: #faa41a
+	.navbar-brand
+		order: 2
 
 	.request_btn_m:hover
 		text-decoration: none
@@ -416,8 +674,8 @@ footer
 		font-weight: 600
 		color: #070f12
 		padding-left: 10px
-	.navbar-brand
-		order: 2
+	.sertificates .section_title
+		text-align: center
 	.static-nav-item:nth-child(1)
 		display: none
 	.static-nav
@@ -452,7 +710,7 @@ footer
 		text-align: center
 	.hero
 		background-position: center 420px !important
-		background: url('/img/Landing page_m.png') no-repeat
+		background: url('../img/Landing page_m.png') no-repeat
 	.tablet
 		position: relative
 		left: 0
@@ -486,7 +744,7 @@ footer
 		top: 0
 		right: 0
 	.last-certific
-		background: url('/img/4.png') no-repeat center center 
+		background: url('../img/4.png') no-repeat center center 
 		background-size: cover
 		padding-bottom: 30px
 	.title_combined
@@ -507,7 +765,94 @@ footer
 		padding-left: 0
 	.footer__list-item
 		display: inline-block
+	.sertificates_text-italic,
+	.sertificates_text
+		text-align: center !important
+	.what_can_do:before
+		left: 45%
+		width: 35px
+		height: 6px
+	.what_can_do
+		text-align: center !important
+		padding: 0
+		padding-top: 30px
+	.combined_item-text
+		color: #464646
+	.rooms_tabs ul li
+		margin: 0 auto
+		display: inline-block
+		margin-bottom: 30px
+	.rooms_tabs ul
+		display: inline-block
+		text-align: center
+	.order-lg-1
+		order: 1
+	.order-lg-2
+		order: 2
+	.tab-pane .row>div
+		padding-left: 0
+	.tab_title
+		padding-top: 30px
+		padding-left: 15px
+		padding-right: 15px
+	.tab_description
+		padding-left: 15px
+		padding-right: 15px
+	.detail ul:before
+		position: absolute
+		content: ''
+		left: 33%
+		top: 0
+		background-color: #faa41a
+		height: 6px
+		width: 113px
+	.detail__list
+		padding: 45px 15px 0px 15px
 
+	ul.detail__list li
+		width: 100%
+		text-align: left
+	.buy_section
+		padding-top: 30px
+	.buy_price
+		font-size: 32px
+	.ui-button
+		padding: 0
+	.action_section
+		text-align: center
+		margin-top: 30px
+	.item_add_to_cart
+		margin-top: 5px
+	.buy_price
+		display: none
+	.buy_price_m
+		margin-top: 15px
+		display: block
+		font-size: 32px
+		font-family: $MonBold
+		color: #1d1d1d
+		text-align: center !important
+	.buy_section .border-yes
+		border-bottom: 1px solid #e1e1e1
+		margin-bottom: 50px
+		padding-bottom: 20px
+	.buy_section
+		background: #f9f9f9
+	.sertificates
+		background: #fff
+	.body-sertificates footer
+		padding-top: 0
+	.body-sertificates footer .container
+		border: none
+	.rooms_tabs ul li
+		margin-bottom: 0
+	.up_img
+		height: 40px
+		margin-bottom: 40px
+		padding-bottom: 0
+		width: 100%
+	.navbar
+		padding: 20px 0
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px
@@ -518,11 +863,15 @@ footer
 @media only screen and (max-width: 1600px) and (min-width: 1400px)
 	.hero
 		min-height: 1100px
+	.ui-button
+		padding: 0
 @media only screen and (max-width: 1500px) and (min-width: 1224px)
 	.tablet
 		max-width: 500px
 		top: 70%
 		left: 80%
+	.ui-button
+		padding: 0
 
 @media only screen and (min-width: 1500px)
 	.static-nav
