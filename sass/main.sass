@@ -509,8 +509,7 @@ footer
 	background-position: top
 	max-height: 8.5px
 	margin-bottom: 9px
-#spinner,
-#spinner2
+.spinner
 	max-width: 55px
 	margin-right: 0
 	padding-left: 10px
@@ -563,8 +562,7 @@ footer
 	border-top: 1px solid #e1e1e1
 	padding-top: 30px
 
-.ui-button:focus,
-.ui-button:hover
+.ui-button:focus
 	border: none
 	background: transparent
 .ui-button
@@ -573,9 +571,72 @@ footer
 	order: 1
 .order-lg-1
 	order: 2
+.sertificate_item .buy_price
+	font-size: 32px
+	padding-top: 30px
+	padding-bottom: 20px
 // @import "media" // Всегда в конце
 .ui-button:selection
 	background-color: transparent
+
+	/*page insight*/
+.prev
+	background: url('../img/next.svg') no-repeat center center !important
+	width: 35px
+	height: 35px
+	position: absolute
+	top: 23%
+	z-index: 99
+	left: 20%
+	transform: rotate(180deg)
+.next
+	background: url('../img/next.svg') no-repeat center center !important
+	width: 35px
+	height: 35px
+	position: absolute
+	top: 23%
+	z-index: 99
+	right: 20%
+.sertificates_slider
+	margin-bottom: 40px
+.insight .sertificates_text
+	word-spacing: -2px
+.detail__list
+	list-style-type: none
+.detail_room
+	border: 1px solid #faa41a
+	border-radius: 5px
+	padding-top: 10px
+.detail_room .detail__list
+	padding-left: 25px
+.sertificate_title-img
+	max-width: 37px
+	min-height: 40px
+.insight .combined_item-title
+	font-size: 21px
+	vertical-align: bottom
+.insight .rooms .container
+	border-top: 1px solid #e1e1e1
+.insight .rooms
+	padding-top: 30px
+.insight .section_title
+	padding-top: 40px
+.insight .buy_section
+	background: #f9f9f9
+.buy_image
+	min-height: 280px
+.sertificate_item
+	margin: 0 auto
+	text-align: center
+.sertificate_item .buy_description
+	margin: 0 auto
+.sertificate_item
+	margin-bottom: 30px
+.footer_insight
+	padding-top: 0
+	background: #f9f9f9 !important
+.rooms .section_title
+	margin-bottom: 20px
 @media only screen and (min-width: 768px) and (max-width: 1024px)
 	.hello_text
 		padding-top: 70px
@@ -655,6 +716,46 @@ footer
 		border-top: none
 	.body-sertificates footer .container
 		border-top: none
+	.sertificates_slider
+		min-height: 370px
+	.slider_img
+		min-height: 370px
+	.detail_room 
+		margin-bottom: 30px
+	.i_want_btn
+		background: transparent
+		color: #1d1d1d
+		font-family: $MonBold
+		border: 1px solid transparent
+		position: relative
+		z-index: 1
+		padding: 15px 60px
+		border-radius: 40px
+		background: #f9f9f9
+
+	.i_want_btn:before
+		content: ''
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		padding: 15px
+		left: 0
+		margin: -2px !important
+		
+		border-radius: 40px
+		background: -webkit-linear-gradient(bottom, rgba(252,164,22,1) 0%, rgba(255,223,106,1) 100%)
+		z-index: -1
+	.detail .detail__list
+		margin-bottom: 60px
+	.footer_insight
+		padding-top: 0
+		background: #fff !important
+	.body-sertificates .buy_section
+		padding-top: 120px
+	.bt
+		border-top: 1px solid #e7e7e7
+		padding-top: 50px
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -853,6 +954,30 @@ footer
 		width: 100%
 	.navbar
 		padding: 20px 0
+	.slick-slide img
+		min-height: 170px
+	.sertificates_slider-item
+		min-height: 170px
+	.prev,
+	.next
+		top: 17%
+	.insight.sertificates .section_title,
+	.insight .sertificates_text
+		text-align: left !important
+	.insight .section_title
+		padding-top: 0
+	.detail__list
+		padding-top: 10px
+	.detail__list-item .address-link
+		font-family: $MonBold
+		display: block
+	.detail_room
+		margin-bottom: 30px
+	.insight .rooms .section_title
+		text-align: center !important
+		padding-top: 20px
+	.insight .room_image
+		padding-left: 0
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px

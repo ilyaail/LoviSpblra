@@ -6,7 +6,12 @@ $(document).ready(function(){
 
 });
     $(document).ready(function(){
-
+        $('.sertificates_slider').slick({
+            arrows: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            adaptiveHeight: true
+        });
         $('.certificate_open').on('click', function(){
             $('.sertificates_drop').fadeToggle('2800');
         });
@@ -30,8 +35,8 @@ $(document).ready(function(){
     });
 });
     $( function() {
-    var spinner = $( "#spinner" ).spinner();
-  var spinner2 = $( "#spinner2" ).spinner();
+    var spinner = $( ".spinner" ).spinner();
+
     $( "button" ).button();
   } );
 })(jQuery);
