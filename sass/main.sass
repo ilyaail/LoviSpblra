@@ -45,6 +45,7 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+	overflow-x: hidden
 
 body
 	font-size: 16px
@@ -575,7 +576,7 @@ footer
 	font-size: 32px
 	padding-top: 30px
 	padding-bottom: 20px
-// @import "media" // Всегда в конце
+
 .ui-button:selection
 	background-color: transparent
 
@@ -599,7 +600,8 @@ footer
 	right: 20%
 .sertificates_slider
 	margin-bottom: 40px
-.insight .sertificates_text
+.insight .sertificates_text,
+.secretroom .sertificates_text
 	word-spacing: -2px
 .detail__list
 	list-style-type: none
@@ -612,16 +614,21 @@ footer
 .sertificate_title-img
 	max-width: 37px
 	min-height: 40px
-.insight .combined_item-title
+.insight .combined_item-title,
+.secretroom .combined_item-title
 	font-size: 21px
 	vertical-align: bottom
-.insight .rooms .container
+.insight .rooms .container,
+.secretroom .rooms .container
 	border-top: 1px solid #e1e1e1
-.insight .rooms
+.insight .rooms,
+.secretroom .rooms
 	padding-top: 30px
-.insight .section_title
+.insight .rooms .section_title,
+.secretroom .rooms .section_title
 	padding-top: 40px
-.insight .buy_section
+.insight .buy_section,
+.secretroom .buy_section
 	background: #f9f9f9
 .buy_image
 	min-height: 280px
@@ -637,6 +644,63 @@ footer
 	background: #f9f9f9 !important
 .rooms .section_title
 	margin-bottom: 20px
+a.i_want_btn
+	display: none
+/*page secretroom*/
+.secretroom .sertificates_text
+	font-size: 22px
+.secretroom .sertificates_text:last-child
+	padding-top: 20px
+.buy_section .col-xl-5:nth-child(odd) .sertificate_item:after
+	content: ''
+	border-right: 1px solid #e1e1e1
+	position: absolute
+	right: -20%
+	height: 90%
+	top: 0
+.secretroom .buy_section
+	background: #f9f9f9
+.secretroom.sertificates
+	background-position: center center
+.insight_out-var-p 
+	font-family: $MonBold
+	font-size: 22px
+	color: #070f12
+.insight_out-var-p-links
+	color: #1d1d1d
+	font-size: 22px
+	font-family: $MonM
+.insight_out-var-p-links a
+	color: #1d1d1d
+	border-bottom: 1px solid #1d1d1d
+.insight_out-var-p
+	margin-bottom: 0
+.insight_out-var
+	padding-left: 20px
+	position: relative
+	margin-bottom: 50px
+.insight_out-var:before
+	content: ''
+	position: absolute
+	height: 100%
+	width: 3px
+	left: 0
+	top: 0
+	background: #faa41a
+.insight_out .rooms
+	margin-top: 50px
+.insight_out .buy_section
+	background: #f9f9f9
+	margin-top: 30px
+.insight_out footer.footer_insight
+	background: #fff !important
+.insight_out .footer_info .container	
+	border: none
+.insight_out .sertificate_item.bt h4
+	padding-top: 20px
+
+// @import "media" // Всегда в конце
+
 @media only screen and (min-width: 768px) and (max-width: 1024px)
 	.hello_text
 		padding-top: 70px
@@ -756,6 +820,8 @@ footer
 	.bt
 		border-top: 1px solid #e7e7e7
 		padding-top: 50px
+	.i_want_btn
+		display: initial !important
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -963,8 +1029,15 @@ footer
 		top: 17%
 	.insight.sertificates .section_title,
 	.insight .sertificates_text
+
 		text-align: left !important
-	.insight .section_title
+	
+	.secretroom .sertificates_text
+		text-align: center
+	.secretroom.sertificates .section_title
+		text-align: center
+	.insight .section_title,
+	.secretroom .section_title
 		padding-top: 0
 	.detail__list
 		padding-top: 10px
@@ -973,11 +1046,37 @@ footer
 		display: block
 	.detail_room
 		margin-bottom: 30px
-	.insight .rooms .section_title
+	.insight .rooms .section_title,
+	.secretroom .rooms .section_title
 		text-align: center !important
 		padding-top: 20px
-	.insight .room_image
+	.insight .room_image,
+	.secretroom .room_image
 		padding-left: 0
+	.insight,
+	.secretrrom
+		background: #f9f9f9
+	.insight .detail ul:before
+		top: 0
+		left: 0
+		height: 100%
+		width: 3px
+	.buy_section .col-xl-5 .sertificate_item
+		border-bottom: 1px solid #e1e1e1
+	.insight .sertificate_item,
+	.secretroom .sertificate_item
+		margin-bottom: 45px
+	.insight .buy_image,
+	.secretroom.buy_image
+		min-height: auto
+	.footer_insight
+		background: #fff !important
+	.secretroom .detail__list-item .address-link
+		display: inline-block
+	.secretroom .buy_section .col-xl-5:last-child .sertificate_item
+		border: none
+	.detail__list-item .address-link
+		display: inline-block
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px
