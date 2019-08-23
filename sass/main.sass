@@ -699,6 +699,78 @@ a.i_want_btn
 .insight_out .sertificate_item.bt h4
 	padding-top: 20px
 
+/*Contacts page*/
+.contacts_title
+	font-family: $MonEB
+	font-size: 32px
+	color: #070f12
+	padding-top: 50px
+	padding-bottom: 40px
+.contacts .contacts_brand_name
+	font-family: $MonBold
+	font-size: 22px
+	color: #1d1d1d
+.contacts_brand_list-image
+	max-width: 15px
+.contacts_brand_list
+	list-style-type: none
+	padding-left: 0
+.contacts_brand_list li
+	line-height: 40px
+.contacts_brand_list li a
+	color: #070f12
+	text-decoration: none
+	margin-left: 10px
+.contacts_brand_image
+	padding-bottom: 10px
+.contacts_brand_list .mail
+	border-bottom: 1px solid #070f12
+.contacts_brand_list .address
+	display: -webkit-inline-flex
+	display: -moz-inline-flex
+	display: -ms-inline-flex
+	display: -o-inline-flex
+	display: inline-flex
+	white-space: pre-wrap
+.contact_form_title
+	font-family: $MonBold
+	font-size: 22px
+	color: #1d1d1d
+	padding-bottom: 15px
+.contact-form
+	padding-top: 90px
+.contact_form input
+	min-height: 50px
+	border-radius: 40px
+	padding-left: 20px
+	border-color: #959595
+.contact_form textarea
+	border-radius: 20px
+	padding-left: 20px
+	border-color: #959595
+.contact_form .form-group
+	margin-bottom: 0
+	padding-top: 10px
+.btn_send
+	border-radius: 32px
+	background-image: linear-gradient(-90deg, #fca416 0%, #ffe110 100%)
+	padding: 20px 100px !important
+	font-family: $MonBold
+	color: #1d1d1d
+	margin-top: 20px
+	margin-bottom: 50px
+.iti__selected-flag 
+	padding-left: 20px
+	background: #f9f9f9
+	border-top-left-radius: 30px
+	border-bottom-left-radius: 30px
+	border-right: 1px solid #959595
+.iti
+	display: block
+.contacts_footer .info
+	display: none
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=tel]
+	padding-left: 60px
 // @import "media" // Всегда в конце
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)
@@ -815,6 +887,8 @@ a.i_want_btn
 	.footer_insight
 		padding-top: 0
 		background: #fff !important
+	.contacts footer .info
+		display: block
 	.body-sertificates .buy_section
 		padding-top: 120px
 	.bt
@@ -822,6 +896,8 @@ a.i_want_btn
 		padding-top: 50px
 	.i_want_btn
 		display: initial !important
+	.contacts
+		background: #fff !important
 @media only screen and (max-width: 550px)
 	.request_btn
 		display: none
@@ -1077,6 +1153,14 @@ a.i_want_btn
 		border: none
 	.detail__list-item .address-link
 		display: inline-block
+	.contacts
+		background: #fff !important
+	.contacts_title
+		text-align: center
+	.contacts_footer .info
+		display: none !important
+	.button_send
+		text-align: center
 @media only screen and (max-width: 1024px) and (min-width: 768px)
 	.tablet
 		max-width: 270px
