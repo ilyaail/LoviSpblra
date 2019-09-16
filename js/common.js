@@ -7,6 +7,9 @@ $(document).ready(function(){
 });
 
     $(document).ready(function(){
+        $('.request_btn').on('click', function(){
+            $('.block_cart').fadeToggle();
+        });
           $('.sertificates_slider').slick({
             arrows: true,
             prevArrow: $('.prev'),
@@ -94,6 +97,15 @@ $('.method-pay-link', this).on('click', function(){
       $('.bank-method').fadeOut(300);
     }
   });
+
+  
+  /*radio check*/
+// if($('label[for="pay-sera"]').on('click', function(){}))
+
+
+
+
+
 
   var input = document.querySelector("#phone");
   window.intlTelInput(input, {
